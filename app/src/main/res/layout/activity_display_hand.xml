@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A82B55"
+    android:backgroundTint="#C794CF"
+    android:padding="20dp"
+    tools:context=".DisplayHand">
+
+    <LinearLayout
+        android:id="@+id/lay_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/clubs2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/clubs_2" />
+
+        <Button
+            android:id="@+id/b_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lay_cards"
+            android:layout_centreHorizontal="true"
+            android:layout_marginTop="600dp"
+            android:backgroundTint="#FDCFDF"
+            android:text="DEAL" />
+
+        <ImageView
+            android:id="@+id/clubs3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/clubs_3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_computer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/clubs_2"
+            android:text="Computer: 0"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@drawable/clubs_2"
+            android:text="Player 1: 0"
+            android:textSize="24sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_fish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b_deal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="GO FISH!"
+        android:textColor="#FFEB3B"
+        android:textSize="72sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
